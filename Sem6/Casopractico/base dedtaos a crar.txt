@@ -1,0 +1,14 @@
+Clientes:
+
+Archivos asociados: clientes.frm, clientes.MYD, clientes.MYI
+
+
+DetallesPedidos:
+
+Archivos asociados: detallespedidos.frm, detallespedidos.MYD, detallespedidos.MYI
+
+
+Pedidos:
+
+Archivos asociados: pedidos.frm, pedidos.MYD, pedidos.MYI
+
