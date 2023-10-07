@@ -1,0 +1,106 @@
+/* CSS Document */
+body{
+			color: purple;
+  background: linear-gradient(to right, #fff7f7 0%, #a2d7f2 50%, #d084f9 100%);
+				font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+
+margin:0;
+}
+
+
+header{
+	display: inline block;
+	font-size:40px;
+	background-color:purple; 
+	color:white;
+	padding:20px;
+			padding-left:200px;
+
+	
+}
+h1, h2, h3 {
+  font-family: sans-serif;
+}
+
+	.navbar{
+
+background-color: purple;
+height: 200%;
+
+	}
+
+
+
+	ul.navbar {
+				line-style-type: none;
+				padding: 0;
+				margin: 0;
+				position: absolute;
+				top: 2em;
+				left: 1em;
+				width:9em;
+			}
+			h1{
+				font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+	}
+			
+			ul.navbar li{
+				margin: 0.5em 0;
+				padding: 0.3em;
+				border-right:1em solid blue;
+			}
+			ul.navbar a{
+				text-decoration: none
+			}
+a:link {
+  color: #d084f9;
+}
+
+a:visited {
+  color: #a2d7f2;
+}
+
+			address{
+				margin-top:1em;
+				padding-top: 1em;
+				border-top: thin dotted
+			}
+#photos{
+        margin:0 auto;
+        padding-top:120px;
+        width:450px;
+        position:relative;
+}
+
+#photos li{
+        position:absolute;
+        width:450px;
+        height:450px;
+        overflow:hidden;
+        background-color:#fff;
+        box-shadow: 1px 1px 1px #ccc;
+        z-index:10;
+
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-duration: 1s;
+          box-shadow: 1px 1px 1px #fff7f7;
+            border: 1px solid #ccc;
+
+
+}
+
+#photos li a{
+        position:absolute;
+        top:6px;
+        left:6px;
+        right:6px;
+        bottom:6px;
+        background-size: cover;
+        text-indent:-9999px;
+        overflow:hidden;
+}
+main{
+	
+	padding-left:200px
+}

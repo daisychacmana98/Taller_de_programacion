@@ -1,0 +1,5 @@
+INTRODUCCIÓN A PHP
+PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de programación de código abiertoEs la expresión con la que se conoce al software o programas que se pueden usar libremente. Normalmente son gratuitos y se puede acceder a su código fuente. muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado dentro de código HTMLHTML es un lenguaje que se emplea para el desarrollo de páginas web..
+
+Cómo funciona PHP:
+El usuario escribe una URLEs una ruta o dirección para poder localizar una página web, imagen, servidor etc. en su navegador y éste envía un petición al servidor webUn servidor web es la maquina o computador donde se almacena una página web.. El servidor lee la página PHP (la interpreta). Envía al navegador del usuario un documento compilado en formato HTMLHTML es un lenguaje que se emplea para el desarrollo de páginas web.
