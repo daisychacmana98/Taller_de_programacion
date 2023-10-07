@@ -1,0 +1,66 @@
+/* CSS Document */
+#fondo{
+	color: #000;
+	background-color: #FC0;
+	margin: auto;
+	text-align: left;
+	width: 70%;
+}
+#fondo #piepagina{
+	color: #F90;
+	background-color: #330;
+	padding: 10px;
+	clear: both;
+}
+#fondo #encabezado{
+	padding: 8px;
+	background-color: #F90;
+}
+#fondo #imagenindex{
+	height: 350px;
+}
+#fondo #contenidoindex #areaizquierda{
+	width: 370px;
+	float: left;
+	padding: 10px;
+}
+#fondo #contenidoplantilla #zonaderecha #conenidopagina h1{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #600;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #030;
+}
+#fondo #contenidoplantilla #zonaderecha{
+	margin-left: 180px;
+}
+h3{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #060;
+}
+a:hover{
+	color: #F00;
+	text-decoration: underline;
+}
+#fondo #contenidoplantilla #zonaderecha #contenidopagina{
+	padding: 15px;
+}
+#fondo #encabezado a{
+	color: #FF0;
+}
+#fondo #encabezado a:hover{
+	color:#FFF;
+}
+a{
+	color: #900;
+	text-decoration: none;
+}
+
+
+form{
+	margin:0 auto;
+	
+}
