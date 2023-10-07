@@ -1,0 +1,33 @@
+Ejercicio 6: mostrar una tabla de 4 por 4 que muestre las primeras 4 potencias de los números del
+uno 1 al 4 (hacer una función que las calcule invocando la función pow). En PHP las funciones hay
+que definirlas antes de invocarlas. Los parámetros se indican con su nombre ($cantidad) si son por
+valor y antecedidos de & (&$cantidad) si son por referencia.
+Ejercicio 7: hacer un programa que muestre en una tabla de 4 columnas todas las imágenes de el
+directorio "fotos". Para ello consulte el manual (en concreto la referencia de funciones de
+directorios). Suponga que en el directorio sólo existen fotos.
+Ejercicio 8: ídem al anterior, pero que muestre las fotos en 100x100 y que al pulsar abra la foto
+entera. Compruebe que sólo muestra fotos con extensión .jpg, .png, bmp o .gif (haga una función
+que lo compruebe usando las expresiones regulares como aparecen en el manual).
+
+
+Entidad instituto
+
+<style>
+        table {
+            border-collapse: collapse;
+            width: 50%; /* Ancho de la tabla */
+            margin: 0 auto; /* Centrar la tabla horizontalmente */
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ccc; /* Color de fila para filas impares */
+        }
+
+        tr:nth-child(even) {
+            background-color: white; /* Color de fila para filas pares */
+        }
+    </style>
