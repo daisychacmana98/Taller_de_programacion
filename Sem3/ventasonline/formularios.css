@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     body {
         display: flex;
         flex-direction: column;
@@ -100,4 +101,108 @@ iframe {
 .btn:focus {
     background-color: aqua;
     color: #004c94;
+=======
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        font-family: "Myriad Pro", sans-serif;
+        font-size: 28px;
+        border-radius: 10px;
+        padding: 10px;
+        }
+
+    table {
+        width: 80%;
+        max-width: 800px;
+    }
+
+
+
+h2 {
+    font-size: 40px; /* Tamaño de fuente en píxeles */
+    font-weight: bold;
+    text-align: center;
+}
+.cuadro-fecha {
+    width: 270px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+th {
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    font: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+input {
+    font-size: 22px;
+    border-radius: 10px;
+    border: 1px solid #004c94;
+    padding: 15px 15px;
+}
+
+
+marquee {
+    font-size: 25px;
+}
+
+
+.message{
+    text-align: center;
+    opacity: 0.8;
+}
+
+iframe {
+    border: none;
+}
+.my-select {
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid #004c94;
+    font-size: 22px;
+}
+
+.my-select:hover {
+    border-color: aqua; /* Color del borde al pasar el ratón */
+}
+
+.my-select:focus {
+    outline: none; /* Elimina el contorno al enfocar el select */
+    border-color: #ea47ff; /* Color del borde al estar enfocado */
+}
+
+.btn{
+    background-color: #ea47ff;
+    border-radius: 15px;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #B20256;
+}
+
+.btn:hover {
+    color: aqua;
+}
+
+.btn:focus {
+    background-color: aqua;
+    color: #004c94;
+>>>>>>> 98662125281aef85276e8ac7dd885ba481fbdb87
 }

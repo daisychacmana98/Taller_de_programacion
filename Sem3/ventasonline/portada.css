@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #f0a9f0;
     font-family: "Myriad Pro", sans-serif;
@@ -88,4 +89,96 @@ iframe {
 .btn:focus {
     background-color: aqua;
     color: #004c94;
+=======
+body {
+    background-color: #f0a9f0;
+    font-family: "Myriad Pro", sans-serif;
+}
+
+h1 {
+    font-size: 50px; /* Tamaño de fuente en píxeles */
+    background-color: #004c94;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Myriad Pro", sans-serif;
+    height: 80px;
+    padding: 25px;
+}
+
+.tabla2 {
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    height: auto;
+}
+
+.columna1 {
+    background-color: #004c94;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px; 
+    font-family: "Myriad Pro", sans-serif;
+    width: 92px;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.columna2 {
+    width: 1200px;
+    height: 650px;
+    background-color: #f8bfff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    font-size: 22px; 
+    border-radius: 10px;
+    box-shadow: 10px;
+    border: 1px solid #004c94;
+    padding: 15px 15px;
+}
+
+
+form {
+    padding: 20px;
+}
+
+a {
+    color: #ea47ff;
+    cursor: pointer;
+}
+
+a:hover {
+    color: aqua;
+}
+iframe {
+    border: none;
+}
+
+.btn{
+    background-color: #ea47ff;
+    border-radius: 15px;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #B20256;
+}
+
+.btn:hover{
+    color: aqua;
+}
+.btn:focus {
+    background-color: aqua;
+    color: #004c94;
+>>>>>>> 98662125281aef85276e8ac7dd885ba481fbdb87
 }

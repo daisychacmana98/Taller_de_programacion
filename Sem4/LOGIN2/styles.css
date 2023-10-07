@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
     background-size: cover;
@@ -59,4 +60,67 @@ body {
 
 .social-icon span:hover {
     color: white;
+=======
+body {
+    background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.card-header h3 {
+    color: white;
+}
+
+.login-btn {
+    background-color: #FFC312;
+    color: black;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    color: white;
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+.social-icon {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.social-icon span {
+    color: #FFC312;
+    cursor: pointer;
+}
+
+.social-icon span:hover {
+    color: white;
+>>>>>>> 98662125281aef85276e8ac7dd885ba481fbdb87
 }

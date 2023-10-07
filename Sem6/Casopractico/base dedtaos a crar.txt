@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Clientes:
 
 Archivos asociados: clientes.frm, clientes.MYD, clientes.MYI
@@ -12,3 +13,19 @@ Pedidos:
 
 Archivos asociados: pedidos.frm, pedidos.MYD, pedidos.MYI
 
+=======
+Clientes:
+
+Archivos asociados: clientes.frm, clientes.MYD, clientes.MYI
+
+
+DetallesPedidos:
+
+Archivos asociados: detallespedidos.frm, detallespedidos.MYD, detallespedidos.MYI
+
+
+Pedidos:
+
+Archivos asociados: pedidos.frm, pedidos.MYD, pedidos.MYI
+
+>>>>>>> 98662125281aef85276e8ac7dd885ba481fbdb87

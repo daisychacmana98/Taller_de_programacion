@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 EJERCICIOS
  Ejercicio 1: Concatena dos cadenas con el operador punto (.) e imprimir su resultado.
  Ejercicio 2: Hacer un programa que sume dos variables que almacenan dos números distintos.
@@ -6,4 +7,14 @@ EJERCICIOS
  Ejercicio 4: Mostrar en pantalla una tabla de 10 por 10 con los números del 1 al 100
  Ejercicio 5: ídem a 4 anterior, pero colorear las filas alternando gris y blanco. Además, el
 tamaño será una constante: define(TAM, 10)
+=======
+EJERCICIOS
+ Ejercicio 1: Concatena dos cadenas con el operador punto (.) e imprimir su resultado.
+ Ejercicio 2: Hacer un programa que sume dos variables que almacenan dos números distintos.
+ Ejercicio 3: hacer un programa que muestre en pantalla información de PHP con la función
+ phpinfo(). Muestre la información centrada horizontalmente en la pantalla.
+ Ejercicio 4: Mostrar en pantalla una tabla de 10 por 10 con los números del 1 al 100
+ Ejercicio 5: ídem a 4 anterior, pero colorear las filas alternando gris y blanco. Además, el
+tamaño será una constante: define(TAM, 10)
+>>>>>>> 98662125281aef85276e8ac7dd885ba481fbdb87
  

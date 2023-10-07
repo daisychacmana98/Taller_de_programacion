@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -112,3 +113,119 @@ h2 {
   color: #873E06;
   background-color: #ffffff;
 }
+=======
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #873E06;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 22px;
+  color: #873E06;
+  font-weight: bold;
+}
+
+#cabecera {
+  background-color: #000000;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 40px;
+  text-align: center;
+}
+
+#contenedor {
+  width: 70%;
+  float: right;
+  padding: 20px;
+  background-color: #F9F9F9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+#contenedor p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#contenedor ul {
+  margin-bottom: 15px;
+}
+
+#contenedor ul li {
+  list-style: disc;
+  margin-left: 20px;
+}
+#contenedor img {
+ 
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  border-radius:5px; 
+}
+#contenedor form {
+  margin-top: 20px;
+}
+
+#contenedor form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contenedor form input,
+#contenedor form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#contenedor form textarea {
+  height: 100px;
+}
+
+#contenedor form input[type="submit"] {
+  background-color: #873E06;
+  color: #F8FF00;
+  border: none;
+  cursor: pointer;
+}
+
+#contenedor form input[type="submit"]:hover {
+  color: #873E06;
+  background-color: #ffffff;
+  border: 1px solid #873E06;
+}
+
+#menu {
+  width: 25%;
+  float: left;
+  background-color: #873E06;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+#menu a {
+  color: #F8FF00;
+  font-size: 18px;
+  line-height: 2;
+  height: 60px;
+  display: block;
+  border-bottom: 1px solid #F8FF00;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: #873E06;
+  background-color: #ffffff;
+}
+>>>>>>> 98662125281aef85276e8ac7dd885ba481fbdb87
