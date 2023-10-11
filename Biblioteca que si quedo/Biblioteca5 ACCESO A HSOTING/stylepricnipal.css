@@ -1,0 +1,131 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Evitar scroll vertical */
+}
+
+#wrapper {
+    display: flex;
+    background-color: #F0F0F0; /* Use a light color for contrast */
+    overflow: auto; /* Si el contenido es demasiado grande, permitir desplazamiento */
+}
+
+#menu {
+    background-color: #1C276F;
+    color: #E0EBF9;
+    padding: 20px;
+    z-index: 1;
+    height: 100vh; /* Establecer altura al 100% de la pantalla */
+    text-align: center; /* Centrar el texto */
+}
+
+#datetime {
+    text-align: right;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #ccc;
+    color: #1C276F;
+}
+
+#content {
+    flex-grow: 1;
+    height: 100vh; /* Establecer altura al 100% de la pantalla */
+}
+
+#menu h2 {
+    color: #E0EBF9; /* Use a secondary color */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#menu a {
+    color: white; /* Color de texto inicial */
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    margin: 15px;
+}
+
+#menu a:hover {
+    color: #0566D8; /* Color de texto al hacer hover */
+}
+
+#menu a.active {
+    background-color: #ffffff; /* Color de fondo para ícono activo */
+    color: #0566D8; /* Color de texto para ícono activo */
+}
+
+#menu a i {
+    font-size: 50px; /* Tamaño del icono */
+    padding: 10px;
+    display: block;
+}
+
+#menu a span {
+    font-size: 1.2em; /* Tamaño del texto */
+    font-weight: bold;
+
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    margin: 0; /* Asegura que no haya márgenes que afecten la posición */
+    padding: 20px 0; /* Añade espacio alrededor del título */
+    height: auto; /* Ajustar la altura automáticamente */
+    background-color: #1C276F;
+}
+
+h2 {
+    color: #1C276F;
+}
+
+.image-container {
+    display: flex;
+    animation: moveImages 20s linear infinite;
+    overflow: hidden;
+}
+
+.moving-images {
+    width: 1000px;
+    margin-right: 10px;
+}
+
+@keyframes moveImages {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+footer {
+    background-color: #CFD2D3; /* Use the predominant color */
+    color: #000000; /* Use a secondary color */
+    padding: 2px;
+    font-weight: bold;
+    bottom: 0; /* Lo posiciona en la parte inferior */
+    width: 100%; /* Opcional: ancho del 100% de la ventana */
+    text-align: center;
+    position: fixed; /* Fija el footer en la parte inferior de la ventana */
+}
+
+audio {
+    display: none;
+}
+
+iframe {
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el contorno */
+    padding-left:10px;
+}

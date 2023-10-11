@@ -1,0 +1,185 @@
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: row; /* Alinea las secciones en fila */
+    }
+
+    .left-section {
+      flex: 60%;
+      background-color: #1C276F;
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right-section {
+      flex: 40%;
+      display: flex;
+      flex-direction: column; /* Cambio en la dirección para alinear los elementos verticalmente */
+      align-items: center; /* Alinea los elementos al centro */
+     
+      justify-content: center;
+    }
+h1{
+        font-size: 105px;
+        text-align: left;
+        font-weight: bold;
+         padding: 25px;
+         margin-bottom: 65px;
+}
+    .formular {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      width: 400px;
+      margin: auto; /* Centrar el formulario */
+    }
+
+    @media screen and (max-width: 1020px) {
+      .formular {
+        width: 100%;
+      }
+    }
+
+    .formular--error .formular__input-wrapper {
+      border: 2px solid #AF3500;
+    }
+
+    .input-target {
+      border: 2px solid #69A1B2;
+    }
+
+    .formular__validation {
+      color: #AF3500;
+      margin-top: 20px;
+    }
+
+    .formular__validation.validationPW {
+      color: #000;
+      font-size: 30px;
+      margin-top: 15%;
+    }
+
+    .formular__validation.success {
+      color: #000;
+      font-size: 30px;
+      margin-top: 12%;
+    }
+
+    .val-link {
+      color: #bbb;
+      display: block;
+      font-size: 20px;
+    }
+
+    .val-link:hover {
+      color: #0d7e7f;
+      cursor: pointer;
+    }
+
+    label {
+      background-color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      font-size: 22px;
+      vertical-align: middle;
+      margin-top: -18px;
+      display: inline-block;
+    }
+
+    .formular__input {
+      border: none;
+      width: calc(100% - 30px);
+      background: transparent;
+      outline: none;
+      margin-bottom: 5px;
+      font-size: 20px;
+      text-align: left;
+    }
+
+    .formular__input-wrapper {
+      height: auto;
+      border: 1px solid #bbb;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px #fff inset;
+    }
+
+    .button {
+      background-color: #1C276F;
+      color: #fff;
+      padding: 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 22px;
+      font-weight: bold;
+      width: 400px;
+    }
+
+    .button:hover {
+      background-color: #0566D8;
+    }
+
+    .img1 {
+      max-width: 250px; /* Asegura que la imagen no desborde su contenedor */
+      margin-top: 20px; /* Espacio entre la imagen y el texto */
+    }
+.flecha {
+  color: #0566D8;
+  font-size: 105px;
+  position: absolute;
+  bottom: 3px;
+  line-height: 2;
+  padding: 25px;
+    transition: color 0.3s;
+
+    animation: mover 1.5s linear infinite;
+  }
+
+  @keyframes mover {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 10px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+
+
+
+
+.flecha:hover {
+  color: #ffffff;
+}
+}
+.error-message{
+  text-align: center;
+  font-weight: bold;
+  color: #9CA2A8;
+  font-size: 16px;
+}
+
+

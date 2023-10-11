@@ -1,0 +1,95 @@
+CREATE DATABASE libros10; 
+use libros10;
+
+CREATE TABLE libros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    autor VARCHAR(255),
+    editorial VARCHAR(255),
+    foto VARCHAR(255),
+    estado VARCHAR(50),
+    descripcion TEXT
+);
+
+INSERT INTO libros (titulo, autor, editorial, foto, estado, descripcion) VALUES
+('El millonario instantáneo', 'Mark Fisher', 'Empresa activa', 'ruta/imagen1.jpg', 'Disponible', 'Libro para reflexionar'),
+('El arte de negociar y persuadir 2 edi.', 'Allan Pease', 'Amat', 'ruta/imagen2.jpg', 'Prestado', 'Ámbito empresarial'),
+('!Vive tu sueño!', 'John C. Maxwell', 'Nelson', 'ruta/imagen3.jpg', 'Disponible', 'Puedes lograr tus metas'),
+('Adictos a la infelicidad', 'Martha Heineman Pieper y William J. Piper', 'Edaf', 'ruta/imagen4.jpg', 'Prestado', 'Aborda el tema de la infelicidad '),
+('!La Vaca!', 'Camilo Cruz, Ph. D', 'Taller del éxito', 'ruta/imagen5.jpg', 'Disponible', 'Libro de motivación'),
+('Vivir, amar y aprender', 'Leo Buscaglia', 'Emecé', 'ruta/imagen6.jpg', 'Disponible', 'La vida es bella'),
+('El arte de la felicidad', 'Howard C. Cutler', 'Carvigraf', 'ruta/imagen7.jpg', 'Disponible', 'Libro inspirador'),
+('Actitud de vencedor', 'John C. Maxwell', 'Caribe', 'ruta/imagen8.jpg', 'Disponible', 'Dar lo mejor de uno mismo'),
+('Vida sin condiciones', 'Deepak Chopra', 'Silver Lady', 'ruta/imagen9.jpg', 'Disponible', 'Debes lograr tus metas'),
+('Desarrolle el líder que está en usted', 'John C. Maxwell', 'Caribe', 'ruta/imagen10.jpg', 'Disponible', 'Liderazgo y superación'),
+('Chocolate caliente para el alma', 'Jack Canfield', 'Atlantida Editorial S.A.', 'ruta/imagen11.jpg', 'Disponible', 'Adrenalina pura'),
+('¡Vivir!', 'Louise L. Hay', 'Amat', 'ruta/imagen12.jpg', 'Disponible', 'Como si fuera la última vez')
+
+
+
+CREATE TABLE cursos (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(255) NOT NULL,
+    Estado VARCHAR(100),
+    Foto VARCHAR(255), 
+    Editando INT DEFAULT 0
+);
+
+INSERT INTO cursos (Nombre, Estado, Foto, Editando) VALUES ('Taller de Administración Web', 'Activo', 'ruta/imagen31.jpg', 0);
+INSERT INTO cursos (Nombre, Estado, Foto, Editando) VALUES ('Animación de Gráficos', 'Activo', 'ruta/imagen32.jpg', 0);
+INSERT INTO cursos (Nombre, Estado, Foto, Editando) VALUES ('Herramientas Multimedia', 'Activo', 'ruta/imagen33.jpg', 0);
+INSERT INTO cursos (Nombre, Estado, Foto, Editando) VALUES ('Diseño Gráfico', 'Activo', 'ruta/imagen34.jpg', 0);
+INSERT INTO cursos (Nombre, Estado, Foto, Editando) VALUES ('Producción Audiovisual', 'Activo', 'ruta/imagen35.jpg', 0);
+
+
+CREATE TABLE estudiantes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo VARCHAR(50) NOT NULL,
+    nombre VARCHAR(255) NOT NULL,
+    telefono VARCHAR(15),
+    direccion VARCHAR(255),
+    foto VARCHAR(255)
+);
+
+INSERT INTO estudiantes (codigo, nombre, telefono, direccion, foto) VALUES
+('001', 'Apolinario Sánchez, Teresa Reyna', '912 968 415', 'Cl. Javier Rojas # 77834 Piso 3', 'ruta/imagen63.jpg'),
+('002', 'Chancahuaña Acuña, Frank David', '959 280 864', 'Av. Damián Esquivel # 8 Dpto. 553', 'ruta/imagen62.jpg'),
+('003', 'Chacmana Andrade, Daisy Nieves', '927 409 050', 'Cl. Jacobo Navarro # 4456', 'ruta/imagen63.jpg'),
+('004', 'Javier Muñoz, Madeleine Janeth', '960 368 836', 'Cl. Gael Gaytán # 1345 Hab. 440', 'ruta/imagen61.jpg'),
+('005', 'García De La Cruz, Yurico Yazuri', '925 090 507', 'Camiño Otero, 4, 0º D', 'ruta/imagen63.jpg'),
+('006', 'Gil Ailas, Noelia Jasmin', '902 625 626', '789 Camino Terciario', 'ruta/imagen64.jpg');
+
+
+CREATE TABLE page_views (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    page_name VARCHAR(255) NOT NULL,
+    view_count INT DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS registro (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    telefono VARCHAR(20),
+    direccion VARCHAR(255),
+    foto VARCHAR(255)
+);
+
+
+CREATE TABLE donaciones (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_estudiante VARCHAR(255) NOT NULL,
+    titulo_libro VARCHAR(255) NOT NULL,
+    autor_libro VARCHAR(255) NOT NULL,
+    archivo_pdf VARCHAR(255) NOT NULL,
+    fecha_donacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE IF NOT EXISTS solicitudes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo VARCHAR(10) NOT NULL,
+    nombre VARCHAR(255) NOT NULL,
+    especialidad VARCHAR(255) NOT NULL,
+    semestre VARCHAR(10) NOT NULL,
+    libro VARCHAR(255) NOT NULL
+);

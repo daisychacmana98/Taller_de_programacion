@@ -1,0 +1,437 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+#datetime {
+    text-align: right;
+    padding: 10px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--gray-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    color: #1C276F;
+    width: 100%;
+    z-index: 1; /* Asegura que el encabezado esté en la capa superior */
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.logo {
+   max-width: 280px;
+    display: block-inline;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Alinea los elementos al centro */
+
+}
+
+#menu a {
+    color: #1C276F;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#menu a:hover {
+    background-color: #0566D8;
+    color: #ffffff;
+}
+
+.login-button {
+    background-color: #1C276F;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin: 8px;
+    text-decoration: none;
+    display: inline-block; /* Para centrar el contenido */
+}
+
+
+.login-button:hover {
+    background-color: #0566D8;
+}
+
+main{
+
+        padding-top: 130px;
+
+}
+
+
+
+h1{
+     color: #1C276F; 
+     font-size: 3em;
+     text-align: center;
+     margin: 10px;
+}
+
+
+
+#ubicaciones{
+width: 75%;
+  margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+div#slider { 
+    overflow: hidden; 
+width: 75%;
+  margin: 0 auto;
+
+
+    border-radius: 5px;
+} /* las imágenes no van a salir del márgen de la pantalla*/
+
+
+
+
+div#slider figure img { width: 20%; float: left; }
+
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; /*el movimiento se va a mantener de forma indefinida -infinito-*/
+
+}
+
+
+
+/*esta parte del código define el movimiento de las imágenes a la izquierda*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+
+
+
+h2 {
+  margin: 20px auto 20px;
+  font-size: 38px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color:  #1C276F;
+
+
+}
+
+
+
+
+details {
+  width: 65%;
+  min-height: 5px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 20px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 15px;
+  transition: all .3s;
+    justify-content: space-between;
+
+
+}
+
+details + details {
+  margin-top: 20px;
+
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+  
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.control-icon {
+  fill: #1C276F;
+  transition: .3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+.styled-section {
+    padding: 20px;
+    color: white;
+}
+
+.section-title {
+    margin-bottom: 5px;
+}
+
+.section-text {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+.section-subtitle {
+    margin-top: 20px;
+}
+
+.text-light btn-lg{
+text-decoration: none;
+color: #ffffff;
+}
+
+.container-2 {
+    text-align: center;
+}
+
+.container-2 h1 {
+    color: #1C276F; /* Color predominante para el título */
+}
+
+.container-2 .map {
+    height: 300px; /* Ajusta la altura según tu preferencia */
+}
+
+.container-2 .section-text {
+    color: #1C276F; /* Color predominante para el texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+
+}
+
+.container-2 ol {
+    text-align: left;
+    color: #1C276F; /* Color predominante para la lista */
+    margin-left: 20px; /* Alineación y espacio izquierdo */
+}
+
+/* Estilos para secciones */
+.carruselcata {
+    display: flex;
+width: 75%;
+  margin: 0 auto;
+
+    height: 460px;
+}
+
+.carruselcata img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.carruselcata img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    transition: width 0.5s ease, filter 0.5s ease;
+}
+
+/* Estilos para imágenes expandidas */
+.expanded-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.expanded-image img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+
+/*Stilos para las cajas de mapa*/
+.directions-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.direction-box {
+  width: 40%; /* Ajusta el ancho según tus necesidades */
+  background-color: #ffffff;
+  padding: 20px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.direction-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.direction-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+
+
+/*Estilos del footer*/
+        .footer {
+            background-color: #1C276F;
+            color: #E0EBF9;
+            padding: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .footer-container div {
+            flex: 1;
+            border-radius: 10px;
+        }
+
+        .footer-container h4 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .footer-container a img {
+            width: 32px;
+
+        }
+
+        .footer-container a {
+            background-color: #1C276F;
+            color: #0566D8;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 4px;
+        }
+
+        .footer-container a:hover {
+            color: #ffffff;
+
+        }
+
+
+/*stilo de boton horario*/
+
+  #button {
+  background-color: #1C276F;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 22px;
+  font-weight: bold;
+  width: 400px;
+  text-decoration: none;
+  display: block; /* Hacer que el botón sea un bloque */
+  margin: 0 auto; /* Centrar horizontalmente */
+  text-align: center;
+}
+
+#button:hover {
+  background-color: #0566D8;
+}
